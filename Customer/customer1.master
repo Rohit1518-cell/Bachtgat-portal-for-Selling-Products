@@ -1,0 +1,60 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="customer1.master.cs" Inherits="Customer_customer1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            border: 1px solid #000000;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <table align="center" cellpadding="0" cellspacing="0" class="style1">
+        <tr>
+            <td colspan="2" style="font-weight: 700; font-size: xx-large">
+                &nbsp;&nbsp;
+                     <asp:Image ID="Image5" runat="server" Height="47px" 
+                         ImageUrl="~/Image/logo1.png" Width="104px" />
+                     &nbsp; BACHATGAT PORTAL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:ImageButton 
+                         ID="ImageButton1" runat="server" Height="57px" 
+                         ImageUrl="~/Image/add to cart.png" PostBackUrl="~/Customer/Cart.aspx" />
+                     &nbsp;welcome :<asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+&nbsp;&nbsp;
+                <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <asp:Menu ID="Menu1" runat="server" BackColor="Black" ForeColor="White" 
+                    Height="550px" Width="250px">
+                    <Items>
+                        <asp:MenuItem Text="Home" Value="Home"></asp:MenuItem>
+                        <asp:MenuItem Text="My Profile" Value="My Profile"></asp:MenuItem>
+                        <asp:MenuItem Text="Order History" Value="Order History"></asp:MenuItem>
+                        <asp:MenuItem Text="Product" Value="Product"></asp:MenuItem>
+                        <asp:MenuItem Text="Feedback" Value="Feedback"></asp:MenuItem>
+                        <asp:MenuItem Text="Cancel Order" Value="Cancel Order"></asp:MenuItem>
+                        <asp:MenuItem Text="Logout" Value="Logout"></asp:MenuItem>
+                    </Items>
+                    <StaticMenuItemStyle VerticalPadding="15px" />
+                    <StaticMenuStyle HorizontalPadding="50px" VerticalPadding="30px" />
+                </asp:Menu>
+            </td>
+            <td valign="top">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

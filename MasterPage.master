@@ -1,0 +1,169 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 90%;
+            height: 0;
+            font-family: Verdana;
+            font-size: medium;
+        }
+        .style5
+        {
+            width: 182px;
+        }
+        .style6
+        {
+            width: 200px;
+            height: 800px;
+        }
+        .style7
+        {
+            height: 205px;
+            text-align: center;
+            background-color: #000000;
+        }
+        .style8
+        {
+            height: 16px;
+        }
+    </style>
+</head>
+<body bgcolor="#24c9ff">
+    <form id="form1" runat="server"><br />
+    <table align="center" cellpadding="0" cellspacing="0" class="style1" 
+        style="border: medium outset #C0C0C0">
+        <tr>
+            <td rowspan="3" valign="top">
+                <table align="center" cellpadding="0" cellspacing="0" class="style6">
+                    <tr>
+                        <td class="style7" valign="top">
+                            <br />
+                            <asp:Image ID="Image1" runat="server" Height="159px" 
+                                ImageUrl="~/Image/administrator.png" Width="173px" />
+                            <br />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td valign="top">
+                    <asp:Menu ID="Menu1" runat="server" BackColor="#CCCCCC" ForeColor="White" 
+                                RenderingMode="Table" style="font-weight: 700; background-color: #000066;" 
+                        Width="215px" Height="550px">
+                        <Items>
+                            <asp:MenuItem NavigateUrl="~/Admin/Home.aspx" Text="Home" Value="Home">
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Admin/Post event.aspx" Text="Post event" 
+                                Value="Post event"></asp:MenuItem>
+                            <asp:MenuItem Text="Approve profile" Value="Approve profile"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Admin/View.aspx" Text="View" Value="View">
+                                <asp:MenuItem NavigateUrl="~/Admin/View feedback.aspx" Text="Feedback" 
+                                    Value="Feedback"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Admin/View enquiry.aspx" Text="Enquiry" 
+                                    Value="Enquiry"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Admin/View order.aspx" Text="Order" Value="Order">
+                                </asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Admin/Change passward.aspx" Text="Change passward" 
+                                Value="Change passward"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Admin/Report.aspx" Text="Report" Value="Report">
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Admin/Logout.aspx" Text="Logout" Value="Logout">
+                            </asp:MenuItem>
+                        </Items>
+                        <StaticMenuItemStyle HorizontalPadding="15px" />
+                    </asp:Menu>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td colspan="4" 
+                style="padding: 10px; background-color: #FFFFFF; font-weight: 700; font-size: large; text-align: right;">
+                Bachatgat Portal</td>
+        </tr>
+        <tr>
+            <td style="padding: 5px; background-color: #FFFFFF; text-align: center;">
+                <table align="center" cellpadding="4" cellspacing="0" class="" 
+                    
+                    style="border-right: medium solid #000080; height: 48px; width: 212px; border-left-color: #000080; border-left-width: medium; border-top-color: #000080; border-top-width: medium; border-bottom-color: #000080; border-bottom-width: medium;">
+                    <tr>
+                        <td style="color: #FFFFFF; background-color: #003366" class="style5">
+                            Number Of Users</td>
+                        <td style="background-color: #CCCCCC">
+                            23</td>
+                    </tr>
+                </table>
+            </td>
+            <td style="padding: 5px; background-color: #FFFFFF; text-align: center;" 
+                class="style8">
+                <table align="center" cellpadding="4" cellspacing="0" class="" 
+                    
+                    style="border-right: medium solid #000080; height: 48px; width: 212px; border-left-color: #000080; border-left-width: medium; border-top-color: #000080; border-top-width: medium; border-bottom-color: #000080; border-bottom-width: medium;">
+                    <tr>
+                        <td style="color: #FFFFFF; background-color: #24C9FF" class="style5">
+                            Number Of Bachatgat</td>
+                        <td style="background-color: #CCCCCC">
+                            23</td>
+                    </tr>
+                </table>
+            </td>
+            <td style="padding: 5px; background-color: #FFFFFF; text-align: center;" 
+                class="style8">
+                <table align="center" cellpadding="4" cellspacing="0" class="" 
+                    
+                    style="border-right: medium solid #000080; height: 48px; width: 212px; border-left-color: #000080; border-left-width: medium; border-top-color: #000080; border-top-width: medium; border-bottom-color: #000080; border-bottom-width: medium;">
+                    <tr>
+                        <td style="color: #FFFFFF; background-color: #003366" class="style5">
+                            Number Of Customers</td>
+                        <td style="background-color: #CCCCCC">
+                            23</td>
+                    </tr>
+                </table>
+            </td>
+            <td style="padding: 5px; background-color: #FFFFFF; text-align: center;" 
+                class="style8">
+                <table align="center" cellpadding="4" cellspacing="0" class="" 
+                    
+                    style="border-right: medium solid #000080; height: 48px; width: 212px; border-left-color: #000080; border-left-width: medium; border-top-color: #000080; border-top-width: medium; border-bottom-color: #000080; border-bottom-width: medium;">
+                    <tr>
+                        <td style="color: #FFFFFF; background-color: #24C9FF" class="style5">
+                            Number Of Users</td>
+                        <td style="background-color: #CCCCCC">
+                            23</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td style="padding: 5px; background-color: #FFFFFF; text-align: center;" 
+                colspan="4" valign="top">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+            </td>
+        </tr>
+        </table><br />
+    </form>
+</body>
+</html>

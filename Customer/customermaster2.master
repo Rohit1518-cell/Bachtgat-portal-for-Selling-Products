@@ -1,0 +1,79 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="customermaster2.master.cs" Inherits="Customer_customermaster2" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            border-left-style: solid;
+            border-left-width: 1px;
+            border-right: 1px solid #C0C0C0;
+            border-top-style: solid;
+            border-top-width: 1px;
+            border-bottom: 1px solid #C0C0C0;
+        }
+        .style11
+        {
+            font-size: xx-large;
+        }
+        </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <table align="center" cellpadding="0" cellspacing="0" class="style1">
+        <tr>
+            <td>
+                     <asp:Image ID="Image4" runat="server" Height="70px" 
+                         ImageUrl="~/Image/banner1.png" Width="100%" />
+                     </td>
+        </tr>
+        <tr>
+                <td style="padding: 5px">
+                     <asp:Image ID="Image5" runat="server" Height="47px" 
+                         ImageUrl="~/Image/logo1.png" Width="104px" />
+                     <span class="style11">Bachatgat Portal</span> 
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<asp:ImageButton 
+                         ID="ImageButton1" runat="server" Height="57px" 
+                         ImageUrl="~/Image/add to cart.png" PostBackUrl="~/Customer/Cart.aspx" />
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             
+                </td>
+            </tr>
+        <tr>
+            <td>
+                <asp:Menu ID="Menu1" runat="server" ForeColor="White" Orientation="Horizontal" 
+                    RenderingMode="Table" style="background-color: #000000" Width="100%">
+                    <Items>
+                        <asp:MenuItem Text="home" Value="home"></asp:MenuItem>
+                        <asp:MenuItem Text="My Profile" Value="My Profile"></asp:MenuItem>
+                        <asp:MenuItem Text="Product" Value="Product"></asp:MenuItem>
+                        <asp:MenuItem Text="Cart " Value="Cart "></asp:MenuItem>
+                        <asp:MenuItem Text="My Order" Value="My Order"></asp:MenuItem>
+                        <asp:MenuItem Text="Feedback" Value="Feedback"></asp:MenuItem>
+                        <asp:MenuItem Text="Get Notification" Value="Get Notification"></asp:MenuItem>
+                        <asp:MenuItem Text="Logout" Value="Logout"></asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                &nbsp;</td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

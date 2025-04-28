@@ -1,0 +1,106 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin Master1.master.cs" Inherits="Admin_Admin_Master1" %>
+
+
+<head>
+    <style type="text/css">
+        .style1 {
+            width: 263px;
+        }
+        .style2 {
+            width: 306px;
+        }
+        .style3 {
+            width: 313px;
+        }
+        .style4 {
+            width: 304px;
+        }
+    </style>
+</head>
+
+
+<
+    <table align="center" cellpadding="2" class="style1">
+        <tr>
+            <td class="style4">
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td class="style4">
+                <table align="center" cellpadding="2" class="style1">
+                    <tr>
+                        <td class="style2">
+                            <asp:Image ID="Image1" runat="server" Height="70px" 
+                                ImageUrl="~/Image/Home1.png" Width="70px" />
+                        </td>
+                        <td class="style3">
+                            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Admin/Home.aspx">Home</asp:HyperLink>
+                        </td>
+                        <td rowspan="7">
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="style2">
+                            <asp:Image ID="Image2" runat="server" Height="70px" 
+                                ImageUrl="~/Image/Event.png" Width="70px" />
+                        </td>
+                        <td class="style3">
+                            <asp:HyperLink ID="HyperLink2" runat="server" 
+                                NavigateUrl="~/Admin/Post event.aspx">Post Event</asp:HyperLink>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="style2">
+                            <asp:Image ID="Image3" runat="server" Height="70px" 
+                                ImageUrl="~/Image/Profile.png" Width="70px" />
+                        </td>
+                        <td class="style3">
+                            <asp:HyperLink ID="HyperLink3" runat="server" 
+                                NavigateUrl="~/Admin/Approve profile.aspx">Approve Profile </asp:HyperLink>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="style2" width="70">
+                            <asp:Image ID="Image4" runat="server" Height="70px" ImageUrl="~/Image/View.png" 
+                                Width="70px" />
+                        </td>
+                        <td class="style3">
+                            <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Admin/View.aspx">View</asp:HyperLink>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="style2" width="70">
+                            <asp:Image ID="Image5" runat="server" Height="70px" 
+                                ImageUrl="~/Image/change password.png" Width="70px" />
+                        </td>
+                        <td class="style3">
+                            <asp:HyperLink ID="HyperLink5" runat="server" 
+                                NavigateUrl="~/Admin/Change passward.aspx">Change Password</asp:HyperLink>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="style2" width="70">
+                            <asp:Image ID="Image6" runat="server" Height="70px" 
+                                ImageUrl="~/Image/Report.png" />
+                        </td>
+                        <td class="style3">
+                            <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/Admin/Report.aspx">Report</asp:HyperLink>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="style2" width="70">
+                            <asp:Image ID="Image7" runat="server" Height="70px" 
+                                ImageUrl="~/Image/Logout.png" Width="70px" />
+                        </td>
+                        <td class="style3">
+                            <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/Admin/Logout.aspx">LogOut</asp:HyperLink>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+

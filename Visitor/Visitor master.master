@@ -1,0 +1,128 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Visitor master.master.cs" Inherits="Visitor_Visitor_master" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style3
+        {            font-size: medium;
+            text-align: right;
+            background-color: #FFFFFF;
+        }
+        .style5
+        {
+            color: #FF0000;
+            font-weight: 700;
+        }
+        .style6
+        {
+        }
+        .style11
+        {
+            font-size: xx-large;
+        }
+        .style12
+        {
+          
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+   
+     <table cellspacing="0" cellpadding="0" width="100%" 
+         
+         style="border-color: #000000; border-width: thick thin thin thin; border-style: solid;">
+         <tr>
+            <td valign="top">
+              </td>
+            <td valign="top" style="font-family: Verdana">
+          <table align="center" cellpadding="0" width="100%" bgcolor="White" cellspacing="0">
+           <tr>
+                <td class="style3" colspan="2" >
+                     <asp:Image ID="Image4" runat="server" Height="70px" 
+                         ImageUrl="~/Image/banner1.png" Width="100%" />
+                     </td>
+            </tr>
+            
+           <tr>
+                <td style="padding: 5px">
+                     <asp:Image ID="Image5" runat="server" Height="47px" 
+                         ImageUrl="~/Image/logo1.png" Width="104px" />
+                     <span class="style11">Bachatgat Portal</span>
+                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td style="padding: 5px" valign="top">
+                     &nbsp;&nbsp;&nbsp;&nbsp; <asp:HyperLink ID="HyperLink4" runat="server" 
+                         style="color: #000000;text-decoration:none" 
+                         NavigateUrl="~/Visitor/Registration form.aspx">Start Selling</asp:HyperLink>
+&nbsp;|
+                     <asp:HyperLink ID="HyperLink3" runat="server" 
+                         style="color: #000000; text-decoration:none" NavigateUrl="~/Visitor/Login.aspx">My Account</asp:HyperLink>
+&nbsp;|&nbsp;
+                     <asp:Image ID="Image6" runat="server" Height="20px" 
+                         ImageUrl="~/Image/login.png" />
+                     <asp:HyperLink ID="HyperLink2" runat="server"  
+                         style="color: #FF0000; text-decoration:none; font-weight: 700" 
+                         NavigateUrl="~/Visitor/Login.aspx">Log In</asp:HyperLink>
+&nbsp;|
+                     <asp:Image ID="Image7" runat="server" Height="20px" 
+                         ImageUrl="~/Image/signup1.png" />
+                     </span><asp:HyperLink ID="HyperLink1" runat="server" CssClass="style5" style=" text-decoration:none" 
+                         NavigateUrl="~/Visitor/Sign Up.aspx">Sign Up</asp:HyperLink>
+                     &nbsp;&nbsp;</td>
+            </tr>
+            
+            <tr>
+                <td class="style6" colspan="2">
+                 
+                    <asp:Menu ID="Menu2" runat="server" BackColor="#CCCCCC" ForeColor="White" 
+                        Orientation="Horizontal" RenderingMode="Table" style="text-align: center; background-color: #000000; font-size: medium; color: #FFFFFF;" 
+                        Width="100%" Height="35px" onmenuitemclick="Menu2_MenuItemClick">
+                        <Items>
+                            <asp:MenuItem NavigateUrl="~/Visitor/Home.aspx" Text="Home" Value="Home" >
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Visitor/About.aspx" Text="What We Do" 
+                                Value="About">
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Visitor/Profile.aspx" Text="Bachatgat Profile's" 
+                                Value="Profile"></asp:MenuItem>
+                            <%--<asp:MenuItem NavigateUrl="~/Visitor/Registation form.aspx" 
+                                Text="Registation form" Value="Registation form"></asp:MenuItem>--%>
+                            <asp:MenuItem NavigateUrl="~/Visitor/Products.aspx" Text="Product Categories" 
+                                Value="product"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Visitor/Event.aspx" Text="Event" Value="Event">
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Visitor/Contact.aspx" Text="Get In Touch" 
+                                Value="Contact"></asp:MenuItem>
+                        </Items>
+                    </asp:Menu>
+                     </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td style="font-size: medium; color: #FFFFFF; background-color: #000000" 
+                    colspan="2">
+                    <marquee width="100%" behavior="alternate">Project By:Vaishnavi & Pranoti             <asp:Button ID="Button1" runat="server" Text="b" AccessKey="b" BorderStyle="None" BackColor="Black" ForeColor="Black" Height="20" PostBackUrl="~/Admin/Admin Login.aspx"></asp:Button></marquee></td>
+            </tr>
+        </table>
+
+            </td>
+            <td valign="top">
+              </td>
+         </tr>
+     
+     
+     </table>
+      
+    </form>
+</body>
+</html>
